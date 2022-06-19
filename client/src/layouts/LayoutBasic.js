@@ -17,7 +17,7 @@ export default function LayoutBasic(props){
               <LoadRoutes routes={routes} />
             </Content>
             <Footer>
-            E- bank
+            Sistema de Nutricion
             </Footer>
         </Layout>
      </Layout>
