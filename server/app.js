@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const{API_VERSION} = require('./config');
 
-// // Load routings
+// Load routings
 const authRoutes = require('./routers/auth');
 const userRoutes = require("./routers/user");
 

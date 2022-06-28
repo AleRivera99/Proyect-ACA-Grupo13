@@ -1,6 +1,6 @@
 const API_VERSION = "v1";
 const IP_SERVER ="localhost";
-const PORT_DB = 5432;
+const PORT_DB = 27017;
 
 module.exports ={
     API_VERSION,
