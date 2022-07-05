@@ -3,7 +3,7 @@ import {Form, Input, Select, Button, Row, Col, notification } from 'antd'
 import { UserOutlined,MailOutlined,LockOutlined,InfoOutlined} from '@ant-design/icons';
 import {createDieta} from "../../../../Api/dieta"
 import {getAccessTokenApi} from "../../../../Api/auth" 
-import "./AddUserForm.scss"
+import "./AddUserform.scss"
 const { TextArea } = Input;
 
 export default function AddDietaForm(props){
