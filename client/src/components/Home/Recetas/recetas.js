@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getAccessTokenApi } from '../../../Api/auth';
 import { getRecetas, getAvatarReceta } from '../../../Api/receta';
 import NoAvatar from '../../../assets/img/png/no-avatar.png';
-import "./Receta.scss";
+import "./Users.scss";
 
 import { Col, Row, Avatar, List } from 'antd';
 import { Card } from 'antd';
