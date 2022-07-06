@@ -31,3 +31,7 @@ MIT
 
 # Wiki del sistema de nutricion
   https://github.com/AleRivera99/Proyect-ACA-Grupo13/wiki
+# 📒 Manual de Usuario
+  https://github.com/AleRivera99/Proyect-ACA-Grupo13/wiki/Manual-de-Usuario-%F0%9F%93%92
+# 👨🏽‍💻 Manual Técnico
+  https://github.com/AleRivera99/Proyect-ACA-Grupo13/wiki/Manual-T%C3%A9cnico-%F0%9F%91%A8%F0%9F%8F%BD%E2%80%8D%F0%9F%92%BB
