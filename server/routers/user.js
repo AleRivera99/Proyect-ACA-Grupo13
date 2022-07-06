@@ -86,17 +86,15 @@ const api = express.Router();
  *     get:
  *         summary: Obtener todos los usuarios!
  *         tags: [User]
- *         security:
- *              - bearerAuth: []
  *         responses:
  *             200:
  *                 description: Obtener todos los usuarios!
  *                 content:
- *                  application/json:
- *                      schema:
- *                          type: array
- *                          items:
- *                              $ref: '#/components/schemas/User'
+ *                      application/json:
+ *                          schema:
+ *                              type: array
+ *                              items:
+ *                                  $ref: '#/components/schemas/User'
  *                  
  */
 /**
@@ -112,8 +110,6 @@ const api = express.Router();
  *               type: string
  *             required: true
  *             description: El id del usuario
- *         security:
- *              - bearerAuth: []
  *         responses:
  *             200:
  *                 description: Actualizar el usuario!
@@ -138,8 +134,6 @@ const api = express.Router();
  *               type: string
  *             required: true
  *             description: El id del usuario
- *         security:
- *              - bearerAuth: []
  *         responses:
  *             200:
  *                 description: Borrar el usuarios!
