@@ -5,3 +5,7 @@
 * Alejandro Ernesto Renderos Mejía 00309018 Rol: Developer
 * Alejandro Enrique Rivera Vásquez 00011218 Rol: Developer
 * Rodrigo Arévalo Najarro 00303318 Rol: Developer
+
+Licencia utilizada
+MIT
+
