@@ -63,7 +63,6 @@ function UserActive2(props) {
                 >
                     <Avatar src={avatar ? avatar : NoAvatar} className="avatar-home" />
                     <Meta title={`${user.name} ${user.lastname}`} description={`${user.email}`} />
-                    <Meta title={`Cargo: ${user.role}`}/>
                 </Card>
             </List.Item>
 

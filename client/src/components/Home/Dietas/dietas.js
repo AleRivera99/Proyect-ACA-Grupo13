@@ -61,9 +61,13 @@ function UserActive2(props) {
                 <Avatar src={avatar ? avatar : NoAvatar} className="avatar-home" />
                 <Meta title={`Nombre: ${user.name}`} />
                 <p className="ant-card-meta-description">{`Descripcion: ${user.descripcion}`}</p>
-                <p className="ant-card-meta-description">{`Ingredientes: ${user.ingredientes}`}</p>
-                <p className="ant-card-meta-description">{`Portada: ${user.portada}`}</p>
+                <p className="ant-card-meta-description">{`Desayuno: ${user.desayuno}`}</p>
+                <p className="ant-card-meta-description">{`Almuerzo: ${user.almuerzo}`}</p>
+                <p className="ant-card-meta-description">{`Cena: ${user.cena}`}</p>
+                <p className="ant-card-meta-description">{`Bebida: ${user.bebida}`}</p>
                 <p className="ant-card-meta-description">{`Calorias: ${user.calorias}`}</p>
+                <p className="ant-card-meta-description">{`Duracion: ${user.tiempo}`}</p>
+
             </div>
 
 

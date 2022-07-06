@@ -13,6 +13,21 @@ const api = express.Router();
  * @swagger
  * components:
  *  schemas:
+ *      Login:
+ *          type: object
+ *          properties:
+ *              email:
+ *                  type: String
+ *                  description: the email user
+ *              password:
+ *                  type: String
+ *                  description: the password user
+ *          required:
+ *              - email
+ *              - password
+ *          example:
+ *              email: usuario@correo.com
+ *              password: password
  *      User:
  *          type: object
  *          properties:
@@ -47,11 +62,6 @@ const api = express.Router();
  *              password: password
  *              repeatPassword: password
  *              role: role
- *  securitySchemes:
-        bearerAuth:
-            type: http
-            name: bearer
-            bearerFormat: JWT
  */
 /**
  * @swagger
@@ -76,17 +86,15 @@ const api = express.Router();
  *     get:
  *         summary: Obtener todos los usuarios!
  *         tags: [User]
- *         security:
- *              - bearerAuth: []
  *         responses:
  *             200:
  *                 description: Obtener todos los usuarios!
  *                 content:
- *                  application/json:
- *                      schema:
- *                          type: array
- *                          items:
- *                              $ref: '#/components/schemas/User'
+ *                      application/json:
+ *                          schema:
+ *                              type: array
+ *                              items:
+ *                                  $ref: '#/components/schemas/User'
  *                  
  */
 /**
@@ -102,8 +110,6 @@ const api = express.Router();
  *               type: string
  *             required: true
  *             description: El id del usuario
- *         security:
- *              - bearerAuth: []
  *         responses:
  *             200:
  *                 description: Actualizar el usuario!
@@ -128,8 +134,6 @@ const api = express.Router();
  *               type: string
  *             required: true
  *             description: El id del usuario
- *         security:
- *              - bearerAuth: []
  *         responses:
  *             200:
  *                 description: Borrar el usuarios!
@@ -140,6 +144,23 @@ const api = express.Router();
  *                          items:
  *                              $ref: '#/components/schemas/User'
  *                  
+ */
+/**
+ * @swagger
+ * /api/sign-in:
+ *     post:
+ *         summary: Inicio de sesion exitoso !
+ *         tags: [User]
+ *         requestBody:
+ *             required: true
+ *             content:
+ *                 application/json:
+ *                     schema:
+ *                       type: object
+ *                       $ref: '#/components/schemas/Login'
+ *         responses:
+ *             200:
+ *                 description: Inicio de sesion exitoso !
  */
 api.post("/sign-up", UserController.signUp);
 api.post("/sign-in", UserController.signIn);

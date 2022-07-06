@@ -155,16 +155,6 @@ function EditForm(props) {
             <Row gutter={24}>
                 <Col span={24}>
                     <Form.Item>
-                        <TextArea rows={5} placeholder="Descripcion"  prefix={<UserOutlined />}
-                            value={userData.descripcion}
-                            onChange={e => setUserData({ ...userData, descripcion: e.target.value })} />
-
-                    </Form.Item>
-                </Col>
-            </Row>
-            <Row gutter={24}>
-                <Col span={24}>
-                    <Form.Item>
                         <TextArea rows={5} placeholder="Portada"  prefix={<UserOutlined />}
                             value={userData.portada}
                             onChange={e => setUserData({ ...userData, portada: e.target.value })} />

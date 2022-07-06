@@ -18,21 +18,35 @@ const swaggerSpec = {
     definition: {
         openapi: "3.0.0",
         info:{
-            title: "Documentacion de Sistema de nutricion",
+            title: "Documentacion de API de Sistema de nutricion",
             version: "1.0.0"
         },
         servers:[
             {
                 url: "http://localhost:3977"
             }
-        ]
+        ],
+        components: {
+            securitySchemes: {
+                bearerAuth: {
+                    type: "http",
+                    scheme: "bearer",
+                    bearerFormat: "JWT",
+                },
+            },
+        }, 
+        security: [{
+            bearerAuth: [],
+        }],
     },
     apis:[`${path.join(__dirname, "./routers/*.js")}`]
 }
 
 // middleware documentacion
 app.use(express.json())
+app.use("/api",dietasRoutes )
 app.use("/api",userRoutes )
+app.use("/api",recetaRoutes )
 app.use("/api-doc",swaggerUI.serve, swaggerUI.setup(swaggerJsDoc(swaggerSpec)))
 
 

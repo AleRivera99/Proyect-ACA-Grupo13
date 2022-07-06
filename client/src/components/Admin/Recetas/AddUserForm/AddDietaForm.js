@@ -86,11 +86,6 @@ function AddForm(props) {
             <Row gutter={24}>
                 <Col span="24">
                     <Form.Item>
-                        <TextArea rows={6} placeholder="Calorias" prefix={<UserOutlined />}
-                            value={recetaData.calorias}
-                            onChange={e => setRecetaData({ ...recetaData, calorias: e.target.value })} />
-                    </Form.Item>
-                    <Form.Item>
                         <Input
                             prefix={<LockOutlined />}
                             placeholder="Calorias"
