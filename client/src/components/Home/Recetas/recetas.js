@@ -62,7 +62,7 @@ function UserActive2(props) {
                 <Meta title={`Nombre: ${user.name}`} />
                 <p className="ant-card-meta-description">{`Descripcion: ${user.descripcion}`}</p>
                 <p className="ant-card-meta-description">{`Ingredientes: ${user.ingredientes}`}</p>
-                <p className="ant-card-meta-description">{`Portada: ${user.portada}`}</p>
+                <p className="ant-card-meta-description">{`Pasos: ${user.portada}`}</p>
                 <p className="ant-card-meta-description">{`Calorias: ${user.calorias}`}</p>
             </div>
 

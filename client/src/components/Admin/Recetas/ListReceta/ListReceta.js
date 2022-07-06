@@ -86,8 +86,8 @@ function DietaActive2(props) {
         const accessToken = getAccessTokenApi();
         console.log(receta._id);
         confirm({
-            title: "Eliminando usuario",
-            content: `Estas seguro que quieres eliminar la dieta  ${receta.name}?`,
+            title: "Eliminando recetas",
+            content: `Estas seguro que quieres eliminar la receta  ${receta.name}?`,
             okText: "Elimniar",
             okType: "danger",
             cancelText: "Cancelar",
