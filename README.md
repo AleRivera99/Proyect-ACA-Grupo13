@@ -28,3 +28,6 @@ MIT
   - Asegurarse estar corriendo una base de datos no relacional MongoDB
   - yarn start
   - accerder a la url: http://localhost:3977/api-doc/
+
+# Wiki del sistema de nutricion
+  https://github.com/AleRivera99/Proyect-ACA-Grupo13/wiki
